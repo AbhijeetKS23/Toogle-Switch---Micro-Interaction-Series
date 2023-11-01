@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700')
+light-yellow = #ffe9ae
+black = #000
+yellow = #ffba07
+
+*, *:before, *:after
+  box-sizing border-box
+html
+  font-size 14px
+body
+  background-color light-yellow
+  font-size 100%
+  font-family 'Raleway', sans-serif
+.Btn
+  position absolute
+  top 50%
+  left 50%
+  margin-top -2.8125rem /* 45/16 */
+  margin-left -6.25rem /* 100/16 */
+  width 11.5625rem /* 185/16 */
+  height 5.625rem /* 90/16 */
+  border 2px solid
+  border-radius 3.125rem /* 50/16 */
+  box-shadow 0px 0px 200px #ffba07
+  user-select none
+  .balls
+			position absolute
+			width 1.25rem /* 20/16 */
+			height 1.25rem /* 20/16 */
+			height auto
+			top 50%
+			left 50%
+			transform translate3d(-50%,-50%,0)
+			z-index -1
+      pointer-events none
+			.ball
+				position absolute
+				width 1.25rem /* 20/16 */
+				height 1.25rem /* 20/16 */
+				border-radius 50%
+				background yellow
+  .wrap
+			position relative
+			border-radius 3.125rem /* 50/16 */
+			padding .9375rem /* 15/16 */
+			cursor pointer
+			background white
+			height 100%
+			width 100%
+      
+  .switch
+    position relative
+    height 100%
+    width 3.75rem /* 60/16 */
+    display inline-block
+    border-radius 50%
+    box-shadow 0 0 .9375rem /* 15/16 */ #d2d2d2
+    background-color white
+    z-index 2
+  .txt
+    position absolute
+    top 50%
+    right 2.1875rem /* 35/16 */
+    transform translate3d(0, -50%, 0)
+    color black
+    font-weight bold
+    font-size 1.5625rem /* 25/16 */
+    z-index 1
+    user-select none
+  &.on
+    .txt
+      color black
+.kudos
+  color white
+  text-align center
+  position absolute
+  width 100%
+  bottom 0
+  left 0
+  padding 25px 0
+  font-weight 300
+  a 
+    color black

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Switch Button Micro Interaction</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script id="button" type="x/template">
+  <div class="Btn" :class="{'on' : flag}" @click="toggle">
+    <div class="balls" ref="balls">
+      <div class="ball" v-for="(ball, index) in balls"></div>
+    </div>
+    <div class="wrap">
+      <div class="switch" ref="switch"></div>
+      <div class="txt" ref="txt">{{text}}</div>
+    </div>
+  </div>
+</script>
+<div id="app">
+  <btn></btn>
+  <div class="kudos">
+     Inspired by <a href="https://www.uplabs.com/posts/switch-ui-micro-interaction" target="_blank">Nitish Kumar</a></div>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/vue@2.5.9/dist/vue.min.js'></script>
+<script src='https://unpkg.com/tweenrex@1.4.2/dist/tweenrex-all.min.js'></script>
+<script src='https://unpkg.com/just-curves@0.2.0/dist/just-curves.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

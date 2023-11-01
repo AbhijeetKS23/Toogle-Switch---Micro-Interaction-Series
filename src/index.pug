@@ -1,0 +1,12 @@
+script#button(type='x/template')
+  div.Btn(:class="{'on' : flag}", @click="toggle")
+    .balls(ref="balls")
+      .ball(v-for="(ball, index) in balls")
+    .wrap
+      .switch(ref="switch")
+      .txt(ref="txt") {{text}}
+#app
+  btn
+  div.kudos 
+    | Inspired by 
+    a(href="https://www.uplabs.com/posts/switch-ui-micro-interaction", target="_blank") Nitish Kumar
